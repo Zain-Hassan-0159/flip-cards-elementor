@@ -18,8 +18,7 @@
     -webkit-transition: all 250ms ease-in-out 0s;
     transition: all 250ms ease-in-out 0s;
     cursor: pointer;
-    -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 0.025em;
-    box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 0.025em;
+    border: 1px solid rgba(0, 0, 0, 0.197);
 }
 .card .btn{
     display: block;
@@ -32,6 +31,11 @@
 
 .my-icon-wrapper{
     cursor: pointer;
+}
+
+.my-icon-wrapper svg{
+    margin-top: 4px;
+    width: 17px;
 }
 
 .my-icon-wrapper:hover{

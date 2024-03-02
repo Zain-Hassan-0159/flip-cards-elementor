@@ -203,7 +203,8 @@ class hz_Flip_Cards extends \Elementor\Widget_Base {
 				'label' => esc_html__( 'Text Color', 'hz-widgets' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} {{CURRENT_ITEM}}' => 'color: {{VALUE}} !important'
+					'{{WRAPPER}} {{CURRENT_ITEM}}' => 'color: {{VALUE}} !important',
+					'{{WRAPPER}} {{CURRENT_ITEM}} svg' => 'fill: {{VALUE}} !important',
 				],
 			]
 		);
@@ -221,7 +222,7 @@ class hz_Flip_Cards extends \Elementor\Widget_Base {
 			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'label' => esc_html__( 'Heading Typography', 'hz-widgets' ),
-				'name' => 'content_typography',
+				'name' => 'heading_typography',
 				'selector' => '{{WRAPPER}} {{CURRENT_ITEM}} h2',
 			]
 		);
@@ -239,7 +240,7 @@ class hz_Flip_Cards extends \Elementor\Widget_Base {
 			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'label' => esc_html__( 'Icon Typography', 'hz-widgets' ),
-				'name' => 'content_typography',
+				'name' => 'icon_typography',
 				'selector' => '{{WRAPPER}} {{CURRENT_ITEM}} .my-icon-wrapper',
 			]
 		);
